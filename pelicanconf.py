@@ -1,6 +1,6 @@
 AUTHOR = 'Marvin Lasserre'
 SITENAME = 'Marvin Lasserre'
-SITEURL = 'https://mlasserre.github.io'
+SITEURL = '.'
 
 PATH = 'content'
 
