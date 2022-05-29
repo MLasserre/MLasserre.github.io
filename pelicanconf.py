@@ -37,9 +37,9 @@ DEFAULT_PAGINATION = 10
     # (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 # )
 
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
-STATIC_PATHS = ['assets']
+STATIC_PATHS = ['images', 'assets', 'pdfs']
 
 EXTRA_PATH_METADATA = {
     'assets/robots.txt': {'path': 'robots.txt'},
