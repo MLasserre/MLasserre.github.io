@@ -5,42 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mlasserre.github.io/</loc>
-<lastmod>2022-05-29T18:43:03-00:00</lastmod>
+<lastmod>2022-05-29T19:49:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mlasserre.github.io/tags.html</loc>
-<lastmod>2022-05-29T18:43:03-00:00</lastmod>
+<lastmod>2022-05-29T19:49:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mlasserre.github.io/categories.html</loc>
-<lastmod>2022-05-29T18:43:03-00:00</lastmod>
+<lastmod>2022-05-29T19:49:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mlasserre.github.io/authors.html</loc>
-<lastmod>2022-05-29T18:43:03-00:00</lastmod>
+<lastmod>2022-05-29T19:49:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mlasserre.github.io/archives.html</loc>
-<lastmod>2022-05-29T18:43:03-00:00</lastmod>
+<lastmod>2022-05-29T19:49:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://mlasserre.github.io/pages/list-of-my-publications.html</loc>
-<lastmod>2022-05-29T17:59:34+02:00</lastmod>
+<loc>https://mlasserre.github.io/pages/publications.html</loc>
+<lastmod>2022-05-29T19:49:40+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
