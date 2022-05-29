@@ -32,10 +32,10 @@ SOCIAL = (('github', 'https://github.com/MLasserre'),)
 
 # Pagination
 DEFAULT_PAGINATION = 10
-PAGINATION_PATTERNS = (
-    (1, '{base_name}/', '{base_name}/index.html'),
-    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
-)
+# PAGINATION_PATTERNS = (
+    # (1, '{base_name}/', '{base_name}/index.html'),
+    # (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+# )
 
 RELATIVE_URLS = True
 
