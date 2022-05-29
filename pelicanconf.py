@@ -25,10 +25,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Pelican', 'https://getpelican.com/'),)
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/MLasserre'),)
@@ -47,7 +44,7 @@ STATIC_PATHS = ['assets']
 EXTRA_PATH_METADATA = {
     'assets/robots.txt': {'path': 'robots.txt'},
     'assets/favicon.ico': {'path': 'favicon.ico'},
-    'assets/CNAME': {'path': 'CNAME'}
+    #'assets/CNAME': {'path': 'CNAME'}
 }
 
 # Post and Pages path
@@ -58,11 +55,11 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
-ARTICLE_PATHS = ['articles', ]
+ARTICLE_PATHS = ['articles']
 ARTICLE_EXCLUDES = ['static', 'extra']
 ARTICLE_ORDER_BY = 'reversed-date'
 
-PAGE_PATHS = ['pages', ]
+PAGE_PATHS = ['pages']
 
 # Tags and Category path
 CATEGORY_URL = 'category/{slug}'
@@ -79,7 +76,7 @@ AUTHORS_SAVE_AS = 'authors.html'
 
 ### Plugins
 
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['sitemap', 'neighbors', 'assets']
 
 # Sitemap
@@ -106,7 +103,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 #MENUITEMS = 
 #PUBLICATIONS_SRC = 'content/publication_list.bib'
 
-HOME_COVER = 'images/pig.jpeg'
+HOME_COVER = 'images/pig.jpg'
 #HEADER_COLOR = 'green'
 
 AUTHORS_BIO = {
@@ -134,4 +131,3 @@ JINJA_ENVIRONMENT = {
     ]
 }
 
-PLUGIN_PATHS = ['plugins']
