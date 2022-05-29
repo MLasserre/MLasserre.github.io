@@ -2,31 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+      <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Marvin Lasserre - Archives for mai 2022</title>
+  <title>About Me</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="../../" rel="canonical" />
+<link href="../pages/about-me.html" rel="canonical" />
+
   <!-- Feed -->
         <link href="https://mlasserre.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marvin Lasserre Full Atom Feed" />
 
-  <link href="../../theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="../../theme/css/code_blocks/github.css" rel="stylesheet">
+      <link href="../theme/css/code_blocks/github.css" rel="stylesheet">
 
     <!-- CSS specified by the user -->
 
 
-    <link href="../../assets/css/myblog.css" type="text/css" rel="stylesheet" />
+    <link href="../assets/css/myblog.css" type="text/css" rel="stylesheet" />
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -39,6 +40,30 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
+
+
+<!-- Open Graph -->
+<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Marvin Lasserre"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="blog"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Marvin Lasserre"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Ph.D. in computer science"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="../"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="../theme/images/home-bg.jpg">
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Website",
+  "name": " Marvin Lasserre ",
+  "url" : "../",
+  "image": "../theme/images/home-bg.jpg",
+  "description": "Ph.D. in computer science"
+}
+</script>
 </head>
 <!-- TODO : Body class -->
 <body class="home-template">
@@ -49,40 +74,45 @@
     <p class="nav-label">Menu</p>
     <ul>
 
-              <li role="presentation"><a href="../../pages/about-me.html">About Me</a></li>
-              <li role="presentation"><a href="../../pages/publications.html">Publications</a></li>
+              <li class="nav-about-me active" role="presentation"><a href="../pages/about-me.html">About Me</a></li>
+              <li role="presentation"><a href="../pages/publications.html">Publications</a></li>
 
     </ul>
   </div>
 </nav>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" >
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="../../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Archives for mai 2022</h1>
+        <h1 class="post-title">About Me</h1>
+            <div class="post-cover cover" style="background-image: url('../images/pig.jpg')">
       </div>
     </header>
 
   <section id="wrapper">
     <a class="hidden-close"></a>
-  <article class="post">
-    <div class="inner">
-      <dl>
-          <dt>25 mai 2022</dt>
-          <dd><a href="../../articles/test-article-2.html">Test article 2</a></dd>
-          <dt>23 mai 2022</dt>
-          <dd><a href="../../articles/test-article.html">Test article</a></dd>
-      </dl>
-    </div>
-  </article>
+  <!-- Post content -->
+  <main class="content" role="main">
+      <article class="post">
+      <div class="inner">
+          <section class="post-content">
+              <h1>Domain of research</h1>
+<p>My thesis subject was about learning continuous bayesian networks from data.
+If you are interested, you can download my
+<a href="../pdfs/thesis_lasserre_marvin.pdf" download><em>manuscript</em></a>
+In case you find a typo, or a mistake, please contact me.</p>
+          </section>
+      </div>
+      </article>
+  </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
@@ -99,7 +129,7 @@
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="../../theme/js/script.js"></script>
+  <script type="text/javascript" src="../theme/js/script.js"></script>
 
 </body>
 </html>
