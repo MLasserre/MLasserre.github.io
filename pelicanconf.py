@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Marvin Lasserre'
 SITENAME = 'Marvin Lasserre'
 SITESUBTITLE = 'Ph.D. in computer science'
-SITEURL = '.'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -32,12 +32,14 @@ SOCIAL = (('github', 'https://github.com/MLasserre'),)
 
 # Pagination
 DEFAULT_PAGINATION = 10
-# PAGINATION_PATTERNS = (
-    # (1, '{base_name}/', '{base_name}/index.html'),
-    # (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
-# )
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
 
 # RELATIVE_URLS = True
+
+PUBLICATIONS_SRC = 'content/mybiblio.bib'
 
 STATIC_PATHS = ['images', 'assets', 'pdfs']
 
@@ -47,7 +49,7 @@ EXTRA_PATH_METADATA = {
     #'assets/CNAME': {'path': 'CNAME'}
 }
 
-INDEX_SAVE_AS = 'blog_index.html'
+# INDEX_SAVE_AS = 'blog_index.html'
 
 # Post and Pages path
 ARTICLE_URL = 'articles/{slug}.html'
@@ -106,6 +108,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 #PUBLICATIONS_SRC = 'content/publication_list.bib'
 
 HOME_COVER = 'images/capri.jpg'
+# SITE_LOGO = ''
 #HEADER_COLOR = 'green'
 
 AUTHORS_BIO = {
