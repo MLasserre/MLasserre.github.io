@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Marvin Lasserre'
 SITENAME = 'Marvin Lasserre'
 SITESUBTITLE = 'Ph.D. in computer science'
-SITEURL = ''
+SITEURL = '.'
 
 PATH = 'content'
 
@@ -46,6 +46,8 @@ EXTRA_PATH_METADATA = {
     'assets/favicon.ico': {'path': 'favicon.ico'},
     #'assets/CNAME': {'path': 'CNAME'}
 }
+
+INDEX_SAVE_AS = 'blog_index.html'
 
 # Post and Pages path
 ARTICLE_URL = 'articles/{slug}.html'
@@ -103,7 +105,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 #MENUITEMS = 
 #PUBLICATIONS_SRC = 'content/publication_list.bib'
 
-HOME_COVER = 'images/pig.jpg'
+HOME_COVER = 'images/capri.jpg'
 #HEADER_COLOR = 'green'
 
 AUTHORS_BIO = {
