@@ -39,7 +39,7 @@ PAGINATION_PATTERNS = (
 
 # RELATIVE_URLS = True
 
-PUBLICATIONS_SRC = 'content/mybiblio.bib'
+# PUBLICATIONS_SRC = 'content/mybiblio.bib'
 
 STATIC_PATHS = ['images', 'assets', 'pdfs']
 
