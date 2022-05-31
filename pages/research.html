@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Home Page</title>
+  <title>Research</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="https://mlasserre.github.io/pages/home-page.html" rel="canonical" />
+<link href="https://mlasserre.github.io/pages/research.html" rel="canonical" />
 
   <!-- Feed -->
         <link href="https://mlasserre.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marvin Lasserre Full Atom Feed" />
@@ -74,8 +74,8 @@
     <p class="nav-label">Menu</p>
     <ul>
 
-              <li class="nav-home-page active" role="presentation"><a href="https://mlasserre.github.io/pages/home-page.html">Home Page</a></li>
-              <li role="presentation"><a href="https://mlasserre.github.io/pages/marvin-lasserre.html">Marvin Lasserre</a></li>
+              <li role="presentation"><a href="https://mlasserre.github.io/pages/about-me.html">About me</a></li>
+              <li class="nav-research active" role="presentation"><a href="https://mlasserre.github.io/pages/research.html">Research</a></li>
               <li role="presentation"><a href="https://mlasserre.github.io/pages/publications.html">Publications</a></li>
               <li role="presentation"><a href="https://mlasserre.github.io/pages/teaching.html">Teaching</a></li>
 
@@ -94,7 +94,7 @@
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Home Page</h1>
+        <h1 class="post-title">Research</h1>
             <div class="post-cover cover" style="background-image: url('https://mlasserre.github.io/images/capri.jpg')">
       </div>
     </header>
@@ -106,22 +106,75 @@
       <article class="post">
       <div class="inner">
           <section class="post-content">
-              <h1>Research</h1>
-<p>My thesis subject was about learning continuous bayesian networks from data.
-If you want to know more about my work, you can download my
-<a href="../pdfs/thesis_lasserre_marvin.pdf" download><em>manuscript</em></a>
-or consult my publications.
-More generally I am interested in artificial intelligence and statistics.</p>
+              <!--Subtitle: Ph.D in computer science-->
+<!--URL:-->
+<!--save_as: index.html-->
+<!--status: hidden-->
+
+<h1>Subject</h1>
+<p>My research work focuses on the use of copula theory for learning <strong>non-parametric
+continuous Bayesian networks</strong>. In particular, we have proposed several algorithms
+(see my publications) for learning the structure of a Copula Bayesian Network (CBN).
+These algorithms are all available in the OTaGrUM plugin for OpenTURNS which makes
+use of the graphical models implemented in aGrUM.</p>
+<p>Recently, we are trying to implement inference algorithms for CBNs.
+We have some interesting results that still wait to be published.
+Stay tuned if you want to know more about it 😉.</p>
+<p>More generally, I have interest in the following subjects:  </p>
+<ul>
+<li>Bayesian networks,</li>
+<li>Probabilistic graphical models,</li>
+<li>Copula theory,</li>
+<li>Information theory,</li>
+<li>Independence testing,</li>
+<li>Reasoning with uncertainties,</li>
+<li>Knowledge representation,</li>
+<li>Probability theory,</li>
+<li>Statistics (Bayesian and classic),</li>
+<li>Artificial intelligence,</li>
+<li>Machine learning.</li>
+</ul>
+<h1>What are Bayesian networks ?</h1>
+<p>A Bayesian network is a structure that allows to encode the independences of
+a multivariate probability distribution through an acyclic directed graph:
+the nodes of the graph represent the random variables while the arcs
+represent the dependencies.
+To each node of the graph, a conditional probability of distribution (CPD) is
+associated. The joint distribution can then be written as the product of these
+CPD.
+In addition to facilitating the visualization of dependencies, the use of the graph
+allows the implementation of efficient algorithms for model selection (learning) and
+prediction (inference). Bayesian networks are at the interface of several fields
+such as statistics, artificial intelligence and information theory.</p>
+<h1>What are copulas ?</h1>
+<p>Copula theory, through the use of Sklar's theorem, allows to decompose a
+multivariate distribution into a copula function and a set of univariate marginal
+distributions.
+The copula function encodes the dependence relations between the random variables
+while the marginals encode their individual behavior.</p>
+<h1>What are Copula Bayesian Networks ?</h1>
+<p>Copula Bayesian networks,
+<a href="https://www.semanticscholar.org/paper/Copula-Bayesian-Networks-Elidan/a27f18a60ca61c7a997e87589bf13930493da139">introduced by Gal Elidan in
+2010</a>,
+are Bayesian networks whose conditional probability distributions are parameterized
+by copula functions.
+This allows: more freedom for modelisation, to remove the marginal behavior of the
+random variables for the structure learning and to have a coherent model between
+structure learning (test independences) and the parameter learning.
+In our case, we use the empirical Bernstein copula which is a non-parametric estimation
+of the copula from a data set.</p>
 <h1>Contributions to open source projects</h1>
 <ul>
 <li>
-<p><strong>OTaGrUM</strong>, <em>main contributor</em>: The otagrum module links Bayesian networks built
+<p><a href="https://openturns.github.io/otagrum/master/index.html"><strong>OTaGrUM</strong></a>,
+<em>main contributor</em>: The otagrum module links Bayesian networks built
 with aGrUM to distributions defined with OpenTURNS. Among other things, it allows
-to define and estimate Bayesian networks parameterized by local conditional copula
-functions for each node (Copula Bayesian Network).</p>
+to learn and manipulate Copula Bayesian networks. parameterized by local conditional copula
+functions for each node (<a href="">Copula Bayesian Network</a>).</p>
 </li>
 <li>
-<p><strong>aGrUM</strong>, <em>secondary contributor</em>: aGrUM is a C++ library for graphical models.
+<p><a href="https://agrum.gitlab.io/"><strong>aGrUM</strong></a>, <em>secondary contributor</em>:
+aGrUM is a C++ library for graphical models.
 It is designed to easily
 build applications using graphical models such as such as Bayesian networks,
 influence diagrams, decision trees, GAI networks or Markov decision processes.
@@ -129,48 +182,11 @@ pyAgrum is a Python wrapper for the aGrUM C++ library (using the SWIG interface
 generator).</p>
 </li>
 </ul>
-<h1>Education</h1>
-<ul>
-<li>
-<p><strong>2018-2022</strong>: Ph.D. degree in Computer Science,
-under the supervision of Pierre-Henri Wuillemin (associate professor at Sorbonne
-Université) and Régis Lebrun (senior scientist at Airbus Central Research &amp;
-Technology), LIP6, Sorbonne Université, Paris, France.</p>
-</li>
-<li>
-<p><strong>2016-2017</strong>: Master 2 - Complex Systems - Modeling, Statistics and Algorithms,
-Université Pierre et Marie Curie, Paris, France.</p>
-</li>
-<li>
-<p><strong>2015-2016</strong>: Master 2 - Physics, Concepts and applications,
-École Normale Supérieure de Lyon, Lyon, France.</p>
-</li>
-<li>
-<p><strong>2014-2015</strong>: Master 1 - Fundamental physics and applications,
-Université Pierre et Marie Curie, Paris France.</p>
-</li>
-<li>
-<p><strong>2011-2014</strong>: Bachelor degree in Physics and mathematics,
-Université Paul Sabatier, Toulouse, France.</p>
-</li>
-</ul>
-<h1>Research Internships</h1>
-<h1>Language skills</h1>
-<ul>
-<li><strong>French</strong>:  native</li>
-<li><strong>English</strong>: B2 level, TOEIC: 840/990 </li>
-<li><strong>Japanese</strong>: 5 years of learning, JLPT N5:132/180</li>
-</ul>
-<h1>Coding skills</h1>
-<ul>
-<li><strong>Programming languages</strong>: C, Python (pandas, sklearn), C++, Latex, Bash</li>
-<li><strong>Programming tools</strong>: Git, Vim</li>
-</ul>
 <h1>Miscellaneous</h1>
 <ul>
-<li><strong>2022</strong>: Organization of the first
+<li><strong>2022</strong>: Co-organizer of the first
 <a href="https://agrum.gitlab.io/pages/apud22.html">aGrUM/pyAgrum Users Day</a>.</li>
-<li><strong>2022-</strong>: Community manager for aGrUM/pyAgrum on
+<li><strong>2022-....</strong>: Community manager for aGrUM/pyAgrum on
 <a href="https://linkedin.com/company/pyagrum">Linkedin</a>.</li>
 </ul>
           </section>
